@@ -92,7 +92,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <framework src="CoreLocation.framework" />
       
         <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist" mode="merge">
-          <string>Sempre verificamos sua posicao atual para apresentar os pedais mais proximos de voce e dar uma previsao do tempo mais atual no sidebar a direita.</string>
+          <string>O app utiliza ratreamento de localizacao em segundo plano para gravar a atividade, mesmo que o app nao esteja visivel na tela. Sempre e necessario usar o rastreamento de localizacao em segundo plano (Always is necessary).</string>
         </config-file>
       
     </platform>
