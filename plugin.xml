@@ -91,9 +91,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/ios/CDVLocation.m" />
         <framework src="CoreLocation.framework" />
       
-        <edit-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist" mode="merge">
+        <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist" mode="merge">
           <string>O rastreamento de localização em segundo plano é utilizado para registrar o trajeto de seu pedal.</string>
-        </edit-file>
+        </config-file>
       
     </platform>
 
