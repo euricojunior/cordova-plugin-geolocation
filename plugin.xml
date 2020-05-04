@@ -90,7 +90,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <header-file src="src/ios/CDVLocation.h" />
         <source-file src="src/ios/CDVLocation.m" />
         <framework src="CoreLocation.framework" />
-
+      
+        <edit-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist" mode="merge">
+          <string>O rastreamento de localização em segundo plano é utilizado para registrar o trajeto de seu pedal.</string>
+        </edit-file>
+      
     </platform>
 
     <!-- windows universal apps (Windows 8.1, Windows Phone 8.1, Windows 8.0) -->
