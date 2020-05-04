@@ -92,7 +92,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <framework src="CoreLocation.framework" />
       
         <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist" mode="merge">
-          <string>O rastreamento de localização em segundo plano é utilizado para registrar o trajeto de seu pedal.</string>
+          <string>Sempre verificamos sua posicao atual para apresentar os pedais mais proximos de voce e dar uma previsao do tempo mais atual no sidebar a direita.</string>
         </config-file>
       
     </platform>
