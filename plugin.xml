@@ -22,7 +22,7 @@
 xmlns:rim="http://www.blackberry.com/ns/widgets"
 xmlns:android="http://schemas.android.com/apk/res/android"
            id="cordova-plugin-geolocation"
-      version="4.0.1-OS1">
+      version="4.0.1-OS3">
 
     <name>Geolocation</name>
     <description>Cordova Geolocation Plugin</description>
@@ -89,13 +89,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </config-file>
       
         <!-- Usage description of the Location for iOS 6+, mandatory since iOS 10 -->
-        <preference name="LOCATION_WHENINUSE_USAGE_DESCRIPTION" default=" " />
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>$LOCATION_WHENINUSE_USAGE_DESCRIPTION</string>
+        <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist" mode="merge">
+          <string>O app utiliza rastreamento de localização em segundo plano para gravar a atividade, mesmo que o app não esteja visível na tela. Sempre é necessário usar o rastreamento de localização em segundo plano (Always is necessary).</string>
         </config-file>
         
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-            <string>$LOCATION_WHENINUSE_USAGE_DESCRIPTION</string>
+        <config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist" mode="merge">
+          <string>O app utiliza rastreamento de localização em segundo plano para gravar a atividade, mesmo que o app não esteja visível na tela. Sempre é necessário usar o rastreamento de localização em segundo plano (Always is necessary).</string>
         </config-file>
 
         <header-file src="src/ios/CDVLocation.h" />
